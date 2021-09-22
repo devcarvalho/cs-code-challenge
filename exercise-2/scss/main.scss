@@ -1,0 +1,143 @@
+$small: 375px;
+
+body {
+  background: #ffffff;
+  color: #333;
+  font-family: Lato, sans-serif;
+
+  .container {
+    display: block;
+    width: 600px;
+    margin: 100px auto 0;
+
+    @media screen and (max-width: $small) {
+      width: 100%;
+      margin: 0;
+    }
+  }
+  ul {
+    margin: 0px;
+    padding: 0;
+  }
+
+  li {
+    display: flex;
+  }
+
+  li,
+  h3 {
+    clear: both;
+    list-style: none;
+  }
+
+  input,
+  button {
+    outline: none;
+
+    &:focus {
+      box-shadow: 0 0 3pt 2pt cornflowerblue;
+    }
+  }
+
+  button {
+    background: none;
+    border: 0px;
+    color: #888888;
+    font-size: 15px;
+    width: 60px;
+    margin: 10px 0 0;
+    font-family: Lato, sans-serif;
+    cursor: pointer;
+
+    &:hover {
+      color: #333;
+    }
+  }
+
+  /* Heading */
+  h3,
+  label[for='new-task'] {
+    color: #333333;
+    font-weight: 700;
+    font-size: 15px;
+    border-bottom: 2px solid #333;
+    padding: 30px 0 10px;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 0 20px;
+  }
+
+  input[type='text'] {
+    margin: 0;
+    font-size: 18px;
+    line-height: 18px;
+    height: 18px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 6px;
+    font-family: Lato, sans-serif;
+    color: #888;
+
+    &:focus {
+      color: #333;
+    }
+
+    &#new-task {
+      width: 318px;
+    }
+  }
+
+  /* Task list */
+  li {
+    overflow: hidden;
+    padding: 20px 0px;
+    border-bottom: 1px solid #eee;
+
+    input[type='checkbox'] {
+      margin: 0 10px;
+      position: relative;
+      top: 15px;
+    }
+
+    label {
+      font-size: 18px;
+      line-height: 40px;
+      width: 237px;
+      padding: 0 0 0 11px;
+    }
+
+    input[type='text'] {
+      width: 226px;
+    }
+
+    .delete :hover {
+      color: #cf2323;
+    }
+  }
+
+  /* Completed */
+  #completed-tasks label {
+    text-decoration: line-through;
+    color: #888;
+  }
+
+  /* Edit Task */
+  ul {
+    li {
+      input[type='text'] {
+        display: none;
+      }
+
+      &.editMode {
+        input[type='text'] {
+          display: block;
+        }
+
+        label {
+          display: none;
+        }
+      }
+    }
+  }
+}

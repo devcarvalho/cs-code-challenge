@@ -1,0 +1,28 @@
+{
+  "name": "cs-code-challenge",
+  "version": "1.0.0",
+  "description": "Abercrombie Client-Side Developer Skill Assessment",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "jest",
+    "sass": "node-sass -w exercise-2/scss/ -o exercise-2/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbercrombieAndFitch/cs-code-challenge.git"
+  },
+  "author": "Filipe Carvalho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AbercrombieAndFitch/cs-code-challenge/issues"
+  },
+  "homepage": "https://github.com/AbercrombieAndFitch/cs-code-challenge#readme",
+  "dependencies": {
+    "node-fetch": "^3.0.0",
+    "node-sass": "^6.0.1"
+  },
+  "devDependencies": {
+    "jest": "^27.2.1"
+  }
+}

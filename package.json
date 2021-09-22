@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AbercrombieAndFitch/cs-code-challenge.git"
+    "url": "git+https://github.com/devcarvalho/cs-code-challenge.git"
   },
   "author": "Filipe Carvalho",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AbercrombieAndFitch/cs-code-challenge/issues"
+    "url": "https://github.com/devcarvalho/cs-code-challenge/issues"
   },
-  "homepage": "https://github.com/AbercrombieAndFitch/cs-code-challenge#readme",
+  "homepage": "https://github.com/devcarvalho/cs-code-challenge#readme",
   "dependencies": {
     "node-fetch": "^3.0.0",
     "node-sass": "^6.0.1"
